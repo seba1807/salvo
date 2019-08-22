@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ship Locations!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/normalize.css" />
+    <link rel="stylesheet" href="dist/gridstack.css" />
+    <link rel="stylesheet" href="dist/gridstack-extra.css" />
+</head>
+<body>
+    <div class="container">
+        <div id="logout">
+            <button id="logout-btn" type="button" onclick=signOut()>Logout</button>
+        </div>
+        <div id="gameinfo">
+
+        </div>
+
+        <div id="hits-sinks" class="row">
+            <div class="col-4">
+                <h2>Hits on you.</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Turn</td>
+                            <td>Hits</td>
+                            <td>Left</td>
+                        </tr>
+                    </thead>
+                    <tbody id="hit-player">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-4">
+                <h2>Hits on opponent.</h2>
+                <table>
+                    <thead>
+                    <tr>
+                        <td>Turn</td>
+                        <td>Hits</td>
+                        <td>Left</td>
+                    </tr>
+                    </thead>
+                    <tbody id="hit-opponent">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-2">
+                <h2>Player Sunk Ships</h2>
+                <table>
+                    <thead>
+                    <tr>
+                        <td>Ships</td>
+                    </tr>
+                    </thead>
+                    <tbody id="player-sunk-ships">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-2">
+                <h2>Opponent Sunk Ships</h2>
+                <table>
+                    <thead>
+                    <tr>
+                        <td>Ships</td>
+                    </tr>
+                    </thead>
+                    <tbody id="opponent-sunk-ships">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-12">
+                <h2>My Ships</h2>
+                <h3 id="add-ships-tittle">Place your ships and press the "Add Ships" button.</h3>
+                <div class="grid-ships">
+                    <!-- div que usa la librería gridstack grid-stack-10 se indica que son 10 columnas-->
+                    <div id="grid" class="grid-stack grid-stack-10">
+
+                    </div>
+                </div>
+                <button id="add-ships" type="button" onclick=addShips()>Add Ships</button>
+            </div>
+
+            <div id="salvo-column" class="col-12">
+                <h2>My Shots</h2>
+                <div id="shots-left">
+                    <a>You have </a>
+                    <span id="shots"></span>
+                    <a> shots left.</a>
+                </div>
+
+                <table>
+                    <thead id="table-headers-salvo">
+                    </thead>
+                    <tbody id="table-rows-salvo">
+                    </tbody>
+                </table>
+                <button id="shoot-salvo" type="button" onclick=addSalvo()>Shoot!</button>
+                <p id="waiting">Waiting for opponent's shot...</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+    <script src="dist/jquery-ui.min.js"></script>
+    <script src="dist/gridstack.js"></script>
+    <script src="dist/gridstack.jQueryUI.js"></script>
+    <script src="dist/jquery.ui.touch-punch.min.js"></script>
+    <script src="game.js"></script>
+
+</body>
+</html>

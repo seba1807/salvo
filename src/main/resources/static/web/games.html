@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salvo!</title>
+</head>
+<body>
+
+    <div id="welcome">
+
+    </div>
+
+    <div id="login">
+        <form id="login-form">
+            <label>User Name: <input id="userName" type="text" name="userName"></label>
+            <label>Password: <input id="password" type="password" name="password"></label>
+            <button id="login-btn" type="button" onclick=signIn()>Login</button>
+            <p>If you are a new user hit the next button!</p>
+            <button id="signup-btn" type="button" onclick=signUp()>SignUp</button>
+        </form>
+
+    </div>
+    <div id="logout">
+        <button id="logout-btn" type="button" onclick=signOut()>Logout</button>
+    </div>
+
+    <div id="game-list">
+
+    </div>
+
+    <div id="create-game">
+        <button id="create-btn" type="button" onclick=createGame()>Create New Game</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Total</td>
+                <td>Won</td>
+                <td>Lost</td>
+                <td>Tied</td>
+            </tr>
+        </thead>
+        <tbody id="tabla">
+
+        </tbody>
+
+    </table>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="games.js"></script>
+</body>
+</html>

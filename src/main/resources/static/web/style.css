@@ -1,0 +1,109 @@
+td {
+    border: solid black;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: white;
+}
+
+div p{
+    text-align: center;
+    margin: 0 auto;
+}
+
+h2{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.active{
+    background: #123D67;
+    color: #123D67;
+}
+
+.salvo{
+    background: orange;
+    color: orange;
+}
+
+.PatroalHorizontal{
+    background-image: url('patrolboathor.png');
+    background-size: contain;
+}
+
+.PatroalVertical{
+    background-image: url('patrolboatver.png');
+    background-size: 100% 100%;
+    width: 45px !important;
+}
+
+.DestroyerHorizontal{
+    background-image: url('destroyerhor.png');
+    background-size: contain;
+}
+
+.DestroyerVertical{
+    background-image: url('destroyerver.png');
+    background-size: 100% 100%;
+    width: 45px !important;
+}
+
+.BattleshipHorizontal{
+    background-image: url('battleshiphor.png');
+    background-size: contain;
+}
+
+.BattleshipVertical{
+    background-image: url('battleshipver.png');
+    background-size: 100% 100%;
+    width: 45px !important;
+}
+
+.CarrierHorizontal{
+    background-image: url('carrierhor.png');
+    background-size: contain;
+}
+
+.CarrierVertical{
+    background-image: url('carrierver.png');
+    background-size: 100% 100%;
+    width: 45px !important;
+}
+
+.SubmarineHorizontal{
+    background-image: url('submarinehor.png');
+    background-size: contain;
+}
+
+.SubmarineVertical{
+    background-image: url('submarinever.png');
+    background-size: 100% 100%;
+    width: 45px !important;
+}
+
+.grid-stack-item-content {
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    left: 0px !important;
+}
+
+.grid-ships{
+    border: solid black;
+    height: 450px;
+    width: 450px;
+    background-image: url('grid-bkg.png');
+    background-size: cover;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.col-4 td,.col-2 td{
+     border: solid black;
+     width: 100px;
+     text-align: center;
+     color: black;
+ }
+
+
